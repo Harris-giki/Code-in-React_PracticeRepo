@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface Props {
-  children: string;
+  children: ReactNode; //through react node we can add more than strings as children through html
 }
 
 const Alert = ({ children }: Props) => {

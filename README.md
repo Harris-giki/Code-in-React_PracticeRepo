@@ -1,6 +1,6 @@
 # 🚀 React Learning Journey
 
-Welcome to my React Learning Repository! This project documents my step-by-step progress in learning **React.js** for modern web development. Each commit represents a concept, challenge, or project milestone I’ve completed along the way — from the fundamentals to more advanced features.
+Welcome to my React Learning Repository! This repository documents my step-by-step progress in learning **React.tsx** for modern web development. Each commit represents a concept, challenge, or project milestone I’ve completed along the way — from the fundamentals to more advanced features.
 
 
 ## 🛠️ How to Run the Code

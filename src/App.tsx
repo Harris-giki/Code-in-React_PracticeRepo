@@ -1,13 +1,8 @@
-import ListGroup from "./components/ListGroup";
-import Alert from "./components/Alert";
+import Button from "./components/button";
 function App() {
   return (
     <div>
-      <Alert>
-        this is an application of children
-        <br />
-        <span>this is a span</span>
-      </Alert>
+      <Button onClick={() => console.log("clicked")}>My button</Button>
     </div>
   );
 }

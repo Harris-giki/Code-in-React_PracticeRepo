@@ -1,16 +1,20 @@
 import { MouseEvent, useState } from "react";
 import { Fragment } from "react/jsx-runtime";
+
 interface Props {
   items: string[];
   heading: string;
+  onSelectItem: (item: string) => void;
 }
-function ListGroup({ items, heading }: Props) {
+
+function ListGroup({ items, heading, onSelectItem }: Props) {
   const message = items.length === 0 ? <p>No item found</p> : null;
   //Hook - a function that allows us to tap into built in features into react
   const [selectedIndex, setSelectedIndex] = useState(-1);
   /* you can also use this const to be returned through a function and then call the funct instead of the const */
   //Event handler
   const handleClick = (event: MouseEvent) => console.log(event);
+
   return (
     <Fragment>
       <h1>{heading}</h1>
@@ -22,10 +26,13 @@ function ListGroup({ items, heading }: Props) {
             className={
               selectedIndex === index
                 ? "list-group-item active"
-                : "list group-item"
+                : "list-group-item"
             }
             key={item}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => {
+              setSelectedIndex(index);
+              onSelectItem(item);
+            }}
           >
             {item}
           </li>

@@ -1,5 +1,10 @@
 import { MouseEvent, useState } from "react";
 import { Fragment } from "react/jsx-runtime";
+//import "./ListGroup.css";
+import styled from "styled-components";
+
+const List = styled.ul` list-style:none;
+padding 0;`;
 
 interface Props {
   items: string[];
@@ -19,7 +24,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
     <Fragment>
       <h1>{heading}</h1>
       {message}
-      <ul className="list-group">
+      <List>
         {/* react requires a key that identifies each unique items so that it may know about the item when they are removed or added uniquely */}
         {items.map((item, index) => (
           <li
@@ -37,7 +42,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
             {item}
           </li>
         ))}{" "}
-      </ul>{" "}
+      </List>{" "}
       {/*We have wrapped the item.map that we created to dynamically list our items in braces because the component's funct in react.tsx only accept html*/}
     </Fragment>
   );

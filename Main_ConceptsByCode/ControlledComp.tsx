@@ -6,7 +6,7 @@ import React, { useRef, FormEvent, useState } from "react";
 const Form = () => {
   const [person, setPerson] = useState({
     name: "",
-    age: "",
+    age: 0,
   });
 
   const handleSubmit = (event: FormEvent) => {

@@ -20,7 +20,8 @@ function App() {
 
   const handleClick = () => {
     const newDrink = {
-      title: drink.title,
+      //title: drink.title, we can coppy all the properties manually so use the spread operator that does it for us, as given below
+      ...drink,
       price: 6,
     };
     setDrink(newDrink);

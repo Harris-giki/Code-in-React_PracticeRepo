@@ -50,7 +50,10 @@ function App() {
 
     axios
       .post("https://jsonplaceholder.typicode.com/users/", newUser)
-      .then((res) => setUsers([res.data, ...users]));
+      .then((res) => setUsers([res.data, ...users]))
+      .catch((err) => {
+        serError(err.message);
+      });
   };
 
   return (

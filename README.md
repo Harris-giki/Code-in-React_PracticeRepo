@@ -1,6 +1,6 @@
 ## 🧪 React Coding Practice
 
-This repository contains my personal React coding practice — including small projects, custom components, and hook experiments — aimed at improving my development skills.
+This repository contains my personal React coding practice — including small projects/concept practices through code, custom components, and hook experiments — aimed at improving my development skills.
 
 ### 🔧 Getting Started
 

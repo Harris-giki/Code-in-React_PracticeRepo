@@ -7,7 +7,7 @@ This repository contains my personal React coding practice — including small p
 To clone and run this repo locally:
 
 ```bash
-git clone https://github.com/yourusername/react-practice.git
+git clone [github.com/yourusername/react-practice.git](https://github.com/Harris-giki/Code-in-React_PracticeRep)
 cd react-practice
 npm install
 npm run dev

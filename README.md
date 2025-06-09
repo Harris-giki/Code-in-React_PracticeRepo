@@ -8,7 +8,7 @@ To clone and run this repo locally:
 
 ```bash
 git clone https://github.com/Harris-giki/Code-in-React_PracticeRep
-cd react-practice
+cd react-app
 npm install
 npm run dev
 ```

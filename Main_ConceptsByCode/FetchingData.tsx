@@ -1,6 +1,6 @@
 // get dummy data from jsonplaceholder.typicode.com
 // sending HTTP Request has two methods of either using:
-// the fetch function
+// the in-built react functions
 // through axios library
 
 import axios from "axios";
